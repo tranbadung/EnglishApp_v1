@@ -2,7 +2,7 @@
 
 import 'package:doan1/compoments/drink_title.dart';
 import 'package:doan1/models/drink.dart';
-import 'package:doan1/models/food.dart';
+import 'package:doan1/pages/flashcard/family_flashcard.dart';
 import 'package:flutter/material.dart';
 
 class FoodDetailsPage extends StatefulWidget {
@@ -47,7 +47,7 @@ class _FoodDetailsPageState extends State<FoodDetailsPage> {
    ];
 
    final pageOpen = [
-    // FoodDetailsPage(),
+    FamilyFlashcard(),
    
 
   ];

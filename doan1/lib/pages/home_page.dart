@@ -1,10 +1,12 @@
 // ignore_for_file: prefer_const_constructors, prefer_const_literals_to_create_immutables
 
 import 'package:doan1/compoments/food_tile.dart';
-import 'package:doan1/compoments/my_button.dart';
 import 'package:doan1/models/food.dart';
 import 'package:doan1/pages/context_page.dart';
 import 'package:doan1/pages/food_details_page.dart';
+import 'package:doan1/pages/quiz_page.dart';
+import 'package:doan1/speak/pronuciation_screen.dart';
+import 'package:doan1/youtube/video_list_sceen.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
@@ -23,14 +25,26 @@ class _HomePageState extends State<HomePage> {
 
     //Học tiếng anh theo chủ đề
     Food(
-     name: "Học tiếng anh theo chủ đề",
+     name: "Học tiếng anh với flashcard",
      imagePath: "lib/images/hi.png",
      ),
 
     //Học tiếng anh theo ngữ cảnh
     Food(
-     name: "Học tiếng anh theo ngữ cảnh",
+     name: "Học tiếng anh với Quiz",
      imagePath: "lib/images/hi1.png",
+     ),
+
+     // Học phát âm
+     Food(
+      name: "Học phát âm từ vựng",
+      imagePath: "lib/images/hi1.png",
+     ),
+
+     // Học tiếng anh qua video
+     Food(
+      name: "Học tiếng anh qua video",
+      imagePath: "lib/images/hi1.png",
      ),
 
 
@@ -38,7 +52,10 @@ class _HomePageState extends State<HomePage> {
 
   final pageOpen = [
     FoodDetailsPage(),
-    ContextPage(),
+    // ContextPage(),
+    QuizPage(),
+    PronunciationScreen(),
+    VideoListScreen(),
 
   ];
 
@@ -180,7 +197,7 @@ class _HomePageState extends State<HomePage> {
 
            Expanded(
             child: ListView.builder(
-              scrollDirection: Axis.horizontal,
+              scrollDirection: Axis.horizontal, // thiết lập hướng cuộn
               itemCount: foodMenu.length,
               itemBuilder: (context, index) => FoodTile(
                 food: foodMenu[index],

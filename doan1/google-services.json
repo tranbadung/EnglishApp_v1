@@ -1,0 +1,46 @@
+{
+  "project_info": {
+    "project_number": "184925991377",
+    "project_id": "authtutorial-5cea9",
+    "storage_bucket": "authtutorial-5cea9.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:184925991377:android:50d7ea44ed0d8333d770f0",
+        "android_client_info": {
+          "package_name": "com.example.doan1"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "184925991377-bpd41ut916b0o2r4qr9plgnhn4bq9kpa.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDnw0QR99EGS7WtYTpX4ZL6AtWg4I_sHWQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "184925991377-bpd41ut916b0o2r4qr9plgnhn4bq9kpa.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "184925991377-1rhjt61ovlroaib7hcbvl0ufvg6vfi1e.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.example.doan1"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
